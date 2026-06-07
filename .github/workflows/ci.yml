@@ -37,4 +37,4 @@ jobs:
       env:
         DAGSHUB_USER_TOKEN: ${{ secrets.DAGSHUB_TOKEN }}
       run: |
-        mlflow run . --no-conda
+        mlflow run . --env-manager local
